@@ -8,7 +8,7 @@ pipeline {
         stage ('vcs') {
             steps {
                 git branch: "${params.branch}",
-                    url: 'https://github.com/spring-projects/spring-petclinic.git'
+                    url: 'https://github.com/vennela012/spring-petclinic.git'
             }
         }
        stage ('Artifactory configuration') {
